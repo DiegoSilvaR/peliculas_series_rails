@@ -1,0 +1,15 @@
+<div class="container-fluid bg-dark text-light vh-100 d-flex align-items-center" style="background-image: url('<%= asset_path('movie.jpg') %>'); background-size: cover; background-position: center;">
+  <div class="col-md-12 justify-content-center d-flex">
+    <div class="text-center">
+    <div class="form-control bg-dark">
+      <h1 class="text-light">Bienvenido a tu Blockbuster</h1>
+
+      <div class="btn-group" role="group" aria-label="Índices">
+        <%= link_to 'Películas', movies_path, class: 'btn btn-primary' %>
+        <%= link_to 'Series', series_path, class: 'btn btn-primary' %>
+        <%= link_to 'Documentales', documentary_films_path, class: 'btn btn-primary' %>
+      </div>
+</div>
+    </div>
+  </div>
+</div>

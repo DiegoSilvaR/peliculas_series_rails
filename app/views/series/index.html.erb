@@ -1,0 +1,21 @@
+<div class="container-fluid bg-dark text-light vh-100">
+  <h1 class="text-center">Series</h1>
+
+  <%= link_to 'Nueva Serie', new_serie_path, class: 'btn btn-primary mb-3' %>
+
+  <div class="row">
+    <% @series.each do |serie| %>
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-secondary text-light mb-3">
+          <div class="card-body">
+            <h5 class="card-title"><%= serie.name %></h5>
+            <p class="card-text"><%= serie.synopsis %></p>
+            <p class="card-text"><strong>Director:</strong> <%= serie.director %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+

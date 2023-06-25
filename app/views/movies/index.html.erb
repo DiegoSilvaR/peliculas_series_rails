@@ -1,0 +1,20 @@
+<div class="container-fluid bg-dark text-light vh-100">
+  <h1 class="text-center">Películas</h1>
+
+  <%= link_to 'Nueva Película', new_movie_path, class: 'btn btn-primary mb-3' %>
+
+  <div class="row">
+    <% @movies.each do |movie| %>
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-secondary text-light mb-3">
+          <div class="card-body">
+            <h5 class="card-title"><%= movie.name %></h5>
+            <p class="card-text"><%= movie.synopsis %></p>
+            <p class="card-text"><strong>Director:</strong> <%= movie.director %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
